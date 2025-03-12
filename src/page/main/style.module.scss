@@ -1,0 +1,20 @@
+@import '../../shared/styles/tools.scss';
+
+.main{
+    .container{
+        width: 1920px;
+        margin: 0 auto;
+        padding: 0 42px;
+    }
+
+    .trackers{
+        width: 1836px;
+        @include flex(column, center, center);
+        row-gap: 12px;
+
+        .error{
+            color: rgb(37, 211, 102);
+            align-self: flex-start;
+        }
+    }
+}

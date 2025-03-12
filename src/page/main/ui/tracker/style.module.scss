@@ -1,0 +1,50 @@
+@import "../../../../shared/styles/tools.scss";
+
+.trucker {
+	width: 100%;
+	@include flex(column, center, center);
+    
+	.content {
+        width: 100%;
+		padding: 16px;
+		background: $dark-color;
+		@include flex;
+		cursor: pointer;
+
+		.command {
+			width: 171px;
+			height: 48px;
+			@include flex;
+			@include font(600, 16px);
+			column-gap: 14px;
+			font-family: "Inter";
+			color: $light-color;
+		}
+
+		.center {
+			flex: 1;
+			@include flex(row, center, center);
+
+			.match {
+				@include flex(column, stretch, center);
+				@include font(600, 20px);
+				color: $light-color;
+				font-family: "Inter";
+
+				button {
+					width: 92px;
+					height: 27px;
+					@include font(600, 12px);
+					border: none;
+					color: $light-color;
+					background-color: $live-color;
+					border-radius: 4px;
+				}
+			}
+		}
+
+		.arrowIcon[data-drop="true"] {
+			transform: rotate(180deg);
+		}
+	}
+}

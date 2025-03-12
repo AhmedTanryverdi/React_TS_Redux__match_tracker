@@ -1,0 +1,17 @@
+$light-color: #ffffff;
+$dark-color: #0b0e12;
+$live-color: #43ad28;
+
+@mixin flex($direct: row, $h: flex-start, $v: center) {
+	display: flex;
+	flex-direction: $direct;
+	justify-content: $h;
+	align-items: $v;
+}
+
+@mixin font($weight: 400, $size: 16px, $lh: 100%, $ls: 0%) {
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $lh;
+	letter-spacing: $ls;
+}

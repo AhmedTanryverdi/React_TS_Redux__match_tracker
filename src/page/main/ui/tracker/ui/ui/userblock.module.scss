@@ -1,0 +1,35 @@
+@import "../../../../../../shared/styles/tools.scss";
+
+.userBlock {
+	width: 286px;
+	height: 52px;
+	@include flex(row, space-around, center);
+	background: #101318;
+	border-radius: 4px;
+
+	.user {
+		@include flex;
+		@include font(600, 16px, 150%);
+		font-family: "Inter";
+		color: $light-color;
+		gap: 8px;
+	}
+
+	.murder {
+		@include flex;
+		span:first-child {
+			@include font(500, 14px, 150%);
+			font-family: "Inter";
+			text-align: right;
+            color: #FAFAFA66;
+
+		}
+
+		span:last-child {
+			@include font(600, 16px, 150%);
+			font-family: "Inter";
+			color: $light-color;
+            margin-left: 8px;
+		}
+	}
+}

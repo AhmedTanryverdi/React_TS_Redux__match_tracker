@@ -1,0 +1,19 @@
+@import "../../styles/tools.scss";
+
+.error {
+	padding: 16px;
+	@include flex;
+	column-gap: 10px;
+	color: $light-color;
+	border-radius: 4px;
+	background: #0f1318;
+	margin-right: 12px;
+
+	@include font(500, 18px);
+	font-family: 'Inter';
+
+	img {
+		width: 28px;
+		height: 28px;
+	}
+}

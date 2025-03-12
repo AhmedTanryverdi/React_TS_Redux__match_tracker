@@ -1,0 +1,40 @@
+@import "../../shared/styles/tools.scss";
+
+.header {
+	width: 100%;
+
+	.container {
+		width: 1920px;
+		margin: 0 auto;
+		padding: 0 42px;
+	}
+
+	.content {
+		width: 100%;
+		@include flex(row, space-between, center);
+		height: 118px;
+
+		.title {
+			@include font(400, 32px);
+			font-style: italic;
+			color: $light-color;
+		}
+
+		.update {
+			@include flex(row, space-between, center);
+			.update_btn {
+				width: 204px;
+				height: 56px;
+				border-radius: 4px;
+				padding: 16px;
+				background: #eb0237;
+				font-family: "Inter";
+				@include font(600, 18px);
+				color: $light-color;
+				border: none;
+				@include flex(row, center, center);
+				column-gap: 10px;
+			}
+		}
+	}
+}
