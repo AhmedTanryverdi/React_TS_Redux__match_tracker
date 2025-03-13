@@ -5,7 +5,8 @@
 	@include flex(column, center, center);
 
 	.content {
-		width: 100%;
+		width: 1836px;
+		margin: 0 auto;
 		padding: 16px;
 		background: $dark-color;
 		@include flex;

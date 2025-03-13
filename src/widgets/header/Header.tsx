@@ -1,11 +1,11 @@
 import React from "react";
-import updateIcon from "../../shared/assets/icons/Refresh.png";
-import style from "./style.module.scss";
 import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../app/redux/store";
 import { Error } from "../../shared/components/error/Error";
 import { getMatches } from "../../entities/model/slices/matchSlice";
 import { url } from "../../shared/assets/constants/constants";
+import updateIcon from "../../shared/assets/icons/Refresh.png";
+import style from "./style.module.scss";
 
 export const Header: React.FC = (): React.JSX.Element => {
 	const status = useSelector<RootState, string>(

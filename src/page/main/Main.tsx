@@ -52,13 +52,11 @@ export const Main: React.FC = (): React.JSX.Element => {
 	return (
 		<div className={style.main}>
 			<div className={style.container}>
-				<div className={style.content}>
-					<Header />
-					<div className={style.matchList}>
-						{matches?.map((match, index) => {
-							return <Match key={index} {...match} />;
-						})}
-					</div>
+				<Header />
+				<div className={style.matchList}>
+					{matches?.map((match, index) => {
+						return <Match key={index} {...match} />;
+					})}
 				</div>
 			</div>
 		</div>

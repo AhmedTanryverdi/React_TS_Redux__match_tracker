@@ -2,7 +2,7 @@
 
 .header {
 	width: 100%;
-
+	@include flex(row, center, center);
 	.container {
 		width: 1920px;
 		margin: 0 auto;
