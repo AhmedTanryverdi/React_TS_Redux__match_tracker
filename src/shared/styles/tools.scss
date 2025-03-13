@@ -2,6 +2,7 @@ $light-color: #ffffff;
 $dark-color: #0b0e12;
 $live-status-color: #43ad28;
 $finished-status-color: #eb0237;
+$preparing-status-color: #eb6402;
 
 @mixin flex($direct: row, $h: flex-start, $v: center) {
 	display: flex;
