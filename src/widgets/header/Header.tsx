@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { RootState, useAppDispatch } from "../../app/redux/store";
 import { Error } from "../../shared/components/error/Error";
 import { getMatches } from "../../entities/model/slices/matchSlice";
+import { url } from "../../shared/assets/constants/constants";
 
 export const Header: React.FC = (): React.JSX.Element => {
 	const status = useSelector<RootState, string>(
@@ -14,7 +15,7 @@ export const Header: React.FC = (): React.JSX.Element => {
 	const dispatch = useAppDispatch();
 
 	const update = ()=>{
-		dispatch(getMatches("http://localhost:8000/matches"));
+		dispatch(getMatches(url));
 	}
 
 	return (

@@ -14,19 +14,19 @@ export const Match: React.FC<MatchType> = (props): React.JSX.Element => {
 			<div className={style.content} onClick={() => setDrop(!isDrop)}>
 				<div className={style.command}>
 					<img src={matchIcon} alt="match icon" />
-					<span>{props.homeTeam.name}</span>
+					<span>{props?.homeTeam.name}</span>
 				</div>
 				<div className={style.center}>
 					<div className={style.result}>
 						<p>
-							<span>{props.homeScore}</span>:
-							<span>{props.awayScore}</span>
+							<span>{props?.homeScore}</span>:
+							<span>{props?.awayScore}</span>
 						</p>
-						<button type="button" data-status={props.status.toLowerCase()}>{props.status}</button>
+						<button type="button" data-status={props.status.toLowerCase()}>{props?.status}</button>
 					</div>
 				</div>
 				<div className={style.command}>
-					<span>{props.awayTeam.name}</span>
+					<span>{props?.awayTeam.name}</span>
 					<img src={matchIcon} alt="match icon" />
 				</div>
 				<img

@@ -6,6 +6,7 @@ import { getMatches } from "../../entities/model/slices/matchSlice";
 import { Match } from "./ui/match/Match";
 import { MatchType } from "../../shared/assets/types/types";
 import style from "./style.module.scss";
+import { url } from "../../shared/assets/constants/constants";
 
 export const Main: React.FC = (): React.JSX.Element => {
 	const dispatch = useAppDispatch();
@@ -23,8 +24,6 @@ export const Main: React.FC = (): React.JSX.Element => {
 	);
 
 	useEffect(() => {
-		const url = "http://localhost:8000/matches";
-
 		dispatch(getMatches(url));
 	}, []);
 

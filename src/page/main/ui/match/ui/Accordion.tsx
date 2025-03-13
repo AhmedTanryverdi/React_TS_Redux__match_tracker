@@ -9,26 +9,26 @@ export const Accordion: React.FC<MatchType> = (props): React.JSX.Element => {
 		<div className={style.accordion}>
 			<div className={style.content}>
 				<div className={style.players}>
-					{props.homeTeam.players.map((player, index) => {
+					{props.homeTeam.players?.map((player, index) => {
 						return <UserBlock key={index} {...player} />;
 					})}
 				</div>
 				<About
-					points={props.homeTeam.points}
-					place={props.homeTeam.place}
-					total_kills={props.homeTeam.total_kills}
+					points={props?.homeTeam.points}
+					place={props?.homeTeam.place}
+					total_kills={props?.homeTeam.total_kills}
 				/>
 			</div>
 			<div className={style.content}>
 				<div className={style.players}>
-					{props.awayTeam.players.map((player, index) => {
+					{props.awayTeam.players?.map((player, index) => {
 						return <UserBlock key={index} {...player} />;
 					})}
 				</div>
 				<About
-					points={props.awayTeam.points}
-					place={props.awayTeam.place}
-					total_kills={props.awayTeam.total_kills}
+					points={props?.awayTeam.points}
+					place={props?.awayTeam.place}
+					total_kills={props?.awayTeam.total_kills}
 				/>
 			</div>
 		</div>
