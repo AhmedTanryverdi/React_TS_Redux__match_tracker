@@ -1,20 +1,76 @@
-@import '../../shared/styles/tools.scss';
+@import "../../shared/styles/tools.scss";
 
-.main{
-    .container{
-        width: 1920px;
-        margin: 0 auto;
-        padding: 0 42px;
-    }
+.main {
+	.container {
+		width: 1920px;
+		margin: 0 auto;
+		padding: 0 42px;
+	}
 
-    .trackers{
-        width: 1836px;
-        @include flex(column, center, center);
-        row-gap: 12px;
+	.matchList {
+		width: 1836px;
+		@include flex(column, center, center);
+		row-gap: 12px;
 
-        .error{
-            color: rgb(37, 211, 102);
-            align-self: flex-start;
-        }
-    }
+		.error {
+			color: rgb(37, 211, 102);
+			align-self: flex-start;
+		}
+	}
+}
+
+.pending {
+	width: 100%;
+	.container {
+		width: 1920px;
+		margin: 0 auto;
+		padding: 0 42px;
+	}
+
+	.title {
+		color: rgb(37, 211, 102);
+
+		&::after {
+			content: "";
+			animation: title 0.8s linear alternate infinite;
+		}
+	}
+
+	@keyframes title {
+		0% {
+			content: "";
+		}
+
+		50% {
+			content: ".";
+		}
+
+		75% {
+			content: "..";
+		}
+
+		100% {
+			content: "...";
+		}
+	}
+}
+
+.rejected {
+	width: 100%;
+	.container {
+		width: 1920px;
+		margin: 0 auto;
+		padding: 0 42px;
+	}
+	text-align: center;
+	margin-top: 30px;
+
+	.title {
+		color: grey;
+	}
+
+	p {
+		color: rgb(223, 71, 66);
+		font-size: 32px;
+	}
 }

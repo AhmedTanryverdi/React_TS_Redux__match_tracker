@@ -1,6 +1,6 @@
 import React from "react";
-import frame from "../../../../../../shared/assets/icons/frame.png";
-import style from "./userblock.module.scss";
+import frame from "../../../../../../../shared/assets/icons/frame.png";
+import style from "./style.module.scss";
 
 export const UserBlock: React.FC<{
 	username: string;

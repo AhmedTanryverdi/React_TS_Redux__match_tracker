@@ -1,11 +1,11 @@
 @import "../../../../shared/styles/tools.scss";
 
-.trucker {
+.match {
 	width: 100%;
 	@include flex(column, center, center);
-    
+
 	.content {
-        width: 100%;
+		width: 100%;
 		padding: 16px;
 		background: $dark-color;
 		@include flex;
@@ -25,7 +25,7 @@
 			flex: 1;
 			@include flex(row, center, center);
 
-			.match {
+			.result {
 				@include flex(column, stretch, center);
 				@include font(600, 20px);
 				color: $light-color;
@@ -37,8 +37,15 @@
 					@include font(600, 12px);
 					border: none;
 					color: $light-color;
-					background-color: $live-color;
 					border-radius: 4px;
+				}
+
+				button[data-status="live"] {
+					background-color: $live-status-color;
+				}
+
+				button[data-status="finished"] {
+					background-color: $finished-status-color;
 				}
 			}
 		}

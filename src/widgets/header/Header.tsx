@@ -2,15 +2,21 @@ import React from "react";
 import updateIcon from "../../shared/assets/icons/Refresh.png";
 import style from "./style.module.scss";
 import { useSelector } from "react-redux";
-import { RootState } from "../../app/redux/store";
+import { RootState, useAppDispatch } from "../../app/redux/store";
 import { Error } from "../../shared/components/error/Error";
+import { getMatches } from "../../entities/model/slices/matchSlice";
 
 export const Header: React.FC = (): React.JSX.Element => {
 	const status = useSelector<RootState, string>(
-		(state) => state.trackers.status
+		(state) => state.matches.status
 	);
 
-	console.log("[status]: ", status);
+	const dispatch = useAppDispatch();
+
+	const update = ()=>{
+		dispatch(getMatches("http://localhost:8000/matches"));
+	}
+
 	return (
 		<div className={style.header}>
 			<div className={style.container}>
@@ -19,9 +25,9 @@ export const Header: React.FC = (): React.JSX.Element => {
 
 					<div className={style.update}>
 						{status === "rejected" && <Error />}
-						<button type="button" className={style.update_btn}>
+						<button type="button" data-status={status} className={style.update_btn} onClick={update}>
 							Обновить
-							<img src={updateIcon} alt="update icon" />
+							{status === "pending" && <img src={updateIcon} alt="update icon" />}
 						</button>
 					</div>
 				</div>

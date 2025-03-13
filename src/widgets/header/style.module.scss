@@ -34,6 +34,24 @@
 				border: none;
 				@include flex(row, center, center);
 				column-gap: 10px;
+
+				img {
+					animation: load 0.8s linear alternate infinite;
+				}
+			}
+
+			.update_btn[data-status="pending"] {
+				background: #a01131;
+			}
+
+			@keyframes load {
+				0% {
+					transform: rotate(0);
+				}
+
+				100% {
+					transform: rotate(360deg);
+				}
 			}
 		}
 	}

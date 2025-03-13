@@ -1,0 +1,135 @@
+{
+	"matches": [
+		{
+			"homeTeam": {
+				"name": "Command_1",
+				"players": [
+					{
+						"username": "Name_1",
+						"kills": 4
+					},
+					{
+						"username": "Name_2",
+						"kills": 4
+					},
+					{
+						"username": "Name_3",
+						"kills": 4
+					},
+					{
+						"username": "Name_3_3",
+						"kills": 4
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"awayTeam": {
+				"name": "Command_2",
+				"players": [
+					{
+						"username": "Name_4",
+						"kills": 5
+					},
+					{
+						"username": "Name_5",
+						"kills": 5
+					},
+					{
+						"username": "Name_6",
+						"kills": 5
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"homeScore": 0,
+			"awayScore": 0,
+			"status": "live"
+		},
+		{
+			"homeTeam": {
+				"name": "Command_1",
+				"players": [
+					{
+						"username": "Name_1",
+						"kills": 4
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"awayTeam": {
+				"name": "Command_2",
+				"players": [
+					{
+						"username": "Name_4",
+						"kills": 5
+					},
+					{
+						"username": "Name_5",
+						"kills": 5
+					},
+					{
+						"username": "Name_6",
+						"kills": 5
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"homeScore": 0,
+			"awayScore": 0,
+			"status": "Finished"
+		},
+		{
+			"homeTeam": {
+				"name": "Command_1",
+				"players": [
+					{
+						"username": "Name_1",
+						"kills": 4
+					},
+					{
+						"username": "Name_2",
+						"kills": 4
+					},
+					{
+						"username": "Name_3",
+						"kills": 4
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"awayTeam": {
+				"name": "Command_2",
+				"players": [
+					{
+						"username": "Name_4",
+						"kills": 5
+					},
+					{
+						"username": "Name_5",
+						"kills": 5
+					},
+					{
+						"username": "Name_6",
+						"kills": 5
+					}
+				],
+				"points": 50,
+				"place": 7,
+				"total_kills": 12
+			},
+			"homeScore": 0,
+			"awayScore": 0,
+			"status": "live"
+		}
+	]
+}
